@@ -1,0 +1,339 @@
+/* css General */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Bebas Neue', cursive;
+}
+
+#grid-area{
+    display: grid;
+    grid-template-areas: 
+    "logo logo logo"
+    "menu menu menu"
+    "titulo titulo titulo"
+    "main main main"
+    "footer footer footer";
+}
+
+header{
+    background-color: #22577A;
+    display: flex;
+    justify-content: center;
+    grid-area: logo;
+}
+header img{
+    width: 100%;
+    height: auto;
+}
+
+nav{
+    background: linear-gradient(to bottom, #22577A 80%, #57CC99);
+    grid-area: menu;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav ul li{
+    list-style: none;
+    margin: 30px;
+}
+nav ul li a{
+    padding: 4px;
+    border: 5px double #38A3A5;
+    border-radius: 30px;
+    color: #57CC99;
+    text-decoration: none;
+}
+.select{
+    color: #22577A;
+    background-color: #57CC99;
+}
+
+h1{
+    grid-area: titulo;
+    color: #22577A;
+    background-color: #57CC99;
+    padding: 3px;
+    display: flex;
+    justify-content: center;
+}
+
+main{
+    grid-area: main;
+    background-color: #C7F9CC;
+    border: 5px solid #22577A;
+    border-bottom: none;
+    display: flex;
+    flex-direction: column;
+}
+
+footer{
+    grid-area: footer;
+    background: linear-gradient(to top, #22577A 50%, #C7F9CC);
+    padding-top: 10px;
+    border: 5px solid #22577A;
+    border-top: none;
+    color: #57CC99;
+    display: flex;
+    justify-content: center;
+}
+
+/* CSS HOME */
+main .info{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+main .info p{
+    text-align: center;
+}
+
+main .productoDes{
+    border: 5px solid #22577A;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main .productoDes p{
+    text-align: center;
+}
+
+main .productoDes img{
+    border: 5px solid #22577A;
+    border-radius: 30px;
+    margin: 10px;
+    width: 30%;
+    height: auto;
+}
+
+/* CSS EMPRESA */
+main .nosotros{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+main .nosotros img{
+    width: 100%;
+    border: 5px solid black;
+    height: auto;
+}
+
+main .nosotros p{
+    text-align: center;
+    margin: 5px;
+}
+
+/* CSS CLIENTES */
+
+main .imagenes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin: 10px;
+}
+
+.imagenes img{
+    width: 80%;
+    border: 5px solid black;
+}
+
+/* CSS CONTACTO */
+
+form{
+    font-size: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 9px;
+}
+
+form input {
+    border: 3px solid #22577A;
+    border-radius: 20px;
+    background-color: #57CC99;
+    text-align: center;
+}
+
+form textarea{
+    background-color: #57CC99;
+    border: 3px solid #22577A;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.enviar{
+    padding: 5px;
+}
+
+.ubicacion{
+    text-align: center;
+}
+
+.data{
+    text-align: center;
+    margin: 5px;
+}
+
+/* CSS PRODUCTOS */
+.productos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+.producto{
+    border: 5px solid black;
+    width: 80%;
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+    text-align: center;
+}
+.producto img{
+    width: 100%;
+    /* height: 400px; */
+}
+
+/* MEDIA QUERYS */
+/* TABLET */
+@media screen and (min-width: 600px){
+    nav{
+        background: linear-gradient(to bottom, #22577A 40%, #57CC99);
+    }
+
+    nav ul{
+        flex-direction: row;
+    }
+    
+    /* QUERY HOME */
+    main .productoDes{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    main .productoDes p{
+        width: 40%;
+        font-size: 20px;
+    }
+
+    /* QUERY CLIENTES */
+
+    main .imagenes{
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 10px;
+    }
+
+    main .imagenes img{
+        width: 30%;
+        margin: 15px;
+    }
+
+    /* QUERY CONTACTO */
+    .ubicacion{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin: 10px;
+    }
+
+    /* QUERY PRODUCTOS */
+    .productos{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .producto{
+        width: 40%;
+        margin-bottom: 30px;
+    }
+
+}
+
+/* DESKTOP */
+@media screen and (min-width: 1024px) {
+    #grid-area{
+        grid-template-areas: 
+        "logo logo menu"
+        "titulo titulo titulo"
+        "main main main"
+        "footer footer footer";
+    }
+
+    header{
+        background: linear-gradient(to bottom, #22577A 60%, #57CC99);
+    }
+
+    header img{
+        all: initial;
+    }
+    nav{
+        background: linear-gradient(to bottom, #22577A 60%, #57CC99);
+    }
+    nav ul li:hover{
+        transform: scale(1.3,1.3);
+        transition: all 0.3s;
+    }
+
+    nav ul li a:hover{
+        color: #22577A;
+        background-color: #57CC99;
+    }
+
+    /* QUERY HOME */
+    main .info-contenido{
+        display: flex;
+    }
+
+    /* QUERY EMPRESA */
+    main .nosotros{
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    main .nosotros img{
+        width: 50%;
+    }
+    main .nosotros p{
+        width: 40%;
+        font-size: 29px;
+    }
+
+    /* QUERY CLIENTES */
+    main .imagenes img{
+        width: 20%;
+    }
+
+    /* QUERY CONTACTO */
+    .enviar:hover{
+        border: 3px solid #57CC99;
+        background-color: #22577A;
+    }
+    .contacto{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    /* QUERY PRODUCTOS */
+    .producto{
+        width: 20%;
+    }
+}
