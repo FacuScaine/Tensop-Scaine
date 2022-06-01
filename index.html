@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="index">
     <!-- CSS only -->
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="./css/index.css">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <title>Tensop</title>
@@ -14,20 +14,36 @@
 </head>
 <body>
     <div id="grid-area">
-        <header>
-            <img src="./images/Tensop.png" alt="Logo Tensop" class="logo">
-        </header>
+                    <nav class="navbar navbar-expand-lg bg-light">
+                        <div class="container-fluid">
+                          <a class="navbar-brand" href="#">
+                            <img src="./images/Tensop.png" alt="" width="280" height="100">
+                          </a>
+                          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                          </button>
+                          <div class="collapse navbar-collapse " id="navbarNav">
+                            <ul class="navbar-nav ">
+                              <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="./pages/empresa.html">Empresa</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="./pages/clientes.html">Clientes</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="./pages/productos.html">Productos</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </nav>
 
-            <nav>
-                <ul>
-                    <li><a class="select" href="./index.html">Home</a></li>
-                    <li><a href="./pages/empresa.html">Empresa</a></li>
-                    <li><a href="./pages/clientes.html">Clientes</a></li>
-                    <li><a href="./pages/productos.html">Productos</a></li>
-                    <li><a href="./pages/contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
-    
         <h1>Home</h1>
         
         <main>

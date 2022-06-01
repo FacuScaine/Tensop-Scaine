@@ -1,15 +1,11 @@
 /* css General */
 *{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Bebas Neue', cursive;
+
 }
 
 #grid-area{
     display: grid;
     grid-template-areas: 
-    "logo logo logo"
     "menu menu menu"
     "titulo titulo titulo"
     "main main main"
@@ -28,7 +24,7 @@ header img{
 }
 
 nav{
-    background: linear-gradient(to bottom, #22577A 80%, #57CC99);
+    background: linear-gradient(to bottom, #22577A 60%, #57CC99);
     grid-area: menu;
     display: flex;
     justify-content: center;
@@ -214,7 +210,7 @@ form textarea{
 /* TABLET */
 @media screen and (min-width: 600px){
     nav{
-        background: linear-gradient(to bottom, #22577A 40%, #57CC99);
+        background: linear-gradient(to bottom, #22577A 60%, #57CC99);
     }
 
     nav ul{
@@ -268,21 +264,7 @@ form textarea{
 
 /* DESKTOP */
 @media screen and (min-width: 1024px) {
-    #grid-area{
-        grid-template-areas: 
-        "logo logo menu"
-        "titulo titulo titulo"
-        "main main main"
-        "footer footer footer";
-    }
 
-    header{
-        background: linear-gradient(to bottom, #22577A 60%, #57CC99);
-    }
-
-    header img{
-        all: initial;
-    }
     nav{
         background: linear-gradient(to bottom, #22577A 60%, #57CC99);
     }
