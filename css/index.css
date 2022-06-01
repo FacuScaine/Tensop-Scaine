@@ -1,8 +1,4 @@
 /* css General */
-*{
-
-}
-
 #grid-area{
     display: grid;
     grid-template-areas: 
