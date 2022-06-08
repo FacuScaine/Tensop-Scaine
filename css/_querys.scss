@@ -1,0 +1,110 @@
+/* TABLET */
+@media screen and (min-width: 600px){
+    nav{
+        background: linear-gradient(to bottom, #22577A 60%, #57CC99);
+        ul{
+        flex-direction: row;
+    }
+    }
+    
+    /* QUERY HOME */
+    main .productoDes{
+        flex-direction: row;
+        justify-content: space-around;
+        p{
+        width: 40%;
+        font-size: 20px;
+    }
+    }
+
+    /* QUERY CLIENTES */
+
+    main .imagenes{
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 10px;
+        img{
+        width: 30%;
+        margin: 15px;
+    }
+    }
+
+    /* QUERY CONTACTO */
+    .ubicacion{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin: 10px;
+    }
+
+    /* QUERY PRODUCTOS */
+    .productos{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .producto{
+        width: 40%;
+        margin-bottom: 30px;
+    }
+
+}
+
+/* DESKTOP */
+@media screen and (min-width: 1024px) {
+
+    nav{
+        ul{
+            li:hover{
+                transform: scale(1.5, 1.5);
+                transition: all 0.6s;
+            }
+        }
+    }
+
+
+    /* QUERY HOME */
+    main .info-contenido{
+        display: flex;
+    }
+
+    /* QUERY EMPRESA */
+    main .nosotros{
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        img{
+        width: 50%;
+    }
+        p{
+        width: 40%;
+        font-size: 29px;
+    }
+    }
+
+
+    /* QUERY CLIENTES */
+    main .imagenes img{
+        width: 20%;
+    }
+
+    /* QUERY CONTACTO */
+    .enviar:hover{
+        border: 3px solid #57CC99;
+        background-color: #22577A;
+    }
+    .contacto{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    /* QUERY PRODUCTOS */
+    .producto{
+        width: 20%;
+        button:hover{
+        background-color: #57CC99;
+    }
+    }
+}

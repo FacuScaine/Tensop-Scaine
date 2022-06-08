@@ -1,0 +1,190 @@
+/* css General */
+
+nav{
+    background: linear-gradient(to bottom, #22577A 60%, #57CC99);
+    ul{
+    margin: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    li{
+    list-style: none;
+    margin: 30px;
+    a{
+    border: 5px double #38A3A5;
+    border-radius: 30px;
+}
+}
+}
+}
+
+.select{
+    color: #22577A;
+    background-color: #57CC99;
+}
+
+h1{
+    grid-area: titulo;
+    color: #22577A;
+    background-color: #57CC99;
+    padding: 3px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0;
+}
+
+main{
+    grid-area: main;
+    background-color: #C7F9CC;
+    border: 5px solid #22577A;
+    border-bottom: none;
+    display: flex;
+    flex-direction: column;
+}
+
+footer{
+    grid-area: footer;
+    font-size: 11px;
+    background: linear-gradient(to top, #22577A 50%, #C7F9CC);
+    padding-top: 10px;
+    border: 5px solid #22577A;
+    border-top: none;
+    color: #57CC99;
+    display: flex;
+    justify-content: center;
+    p{
+    margin-bottom: 0;
+}
+}
+
+/* CSS HOME */
+main .info{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    p{
+    text-align: center;
+}
+}
+
+main .productoDes{
+    border: 5px solid #22577A;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    p{
+    text-align: center;
+}
+    img{
+    border: 5px solid #22577A;
+    border-radius: 30px;
+    margin: 10px;
+    width: 40%;
+    height: auto;
+}
+}
+
+
+/* CSS EMPRESA */
+main .nosotros{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    img{
+    width: 100%;
+    border: 5px solid black;
+    height: auto;
+}
+    p{
+    text-align: center;
+    margin: 5px;
+}
+}
+
+/* CSS CLIENTES */
+
+main .imagenes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin: 10px;
+    img{
+    width: 80%;
+    border: 5px solid #22577A;
+    border-radius: 50px;
+}
+}
+
+/* CSS CONTACTO */
+
+form{
+    font-size: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 9px;
+    input {
+    border: 3px solid #22577A;
+    border-radius: 20px;
+    background-color: #57CC99;
+    text-align: center;
+}
+    textarea{
+    background-color: #57CC99;
+    border: 3px solid #22577A;
+    border-radius: 20px;
+    text-align: center;
+}
+}
+
+.enviar{
+    padding: 5px;
+}
+
+.ubicacion{
+    text-align: center;
+}
+
+.data{
+    text-align: center;
+    margin: 5px;
+}
+
+/* CSS PRODUCTOS */
+.productos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+.producto{
+    background: radial-gradient(#38A3A5, #22577A);
+    border-radius: 50px;
+    width: 80%;
+    display: flex;
+    gap: 5px;
+    padding-bottom: 5px;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    img{
+    width: 100%;
+    border-radius: 50px 50px 0 0;
+}
+    button{
+    border: none;
+    width: 50%;
+    border-radius: 30px;
+    background-color: #38A3A5;
+}
+}
+
+
+/* MEDIA QUERYS */
+@import'querys';

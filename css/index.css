@@ -1,302 +1,286 @@
 /* css General */
-
-nav{
-    background: linear-gradient(to bottom, #22577A 60%, #57CC99);
+nav {
+  background: linear-gradient(to bottom, #22577A 60%, #57CC99);
+}
+nav ul {
+  margin: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+nav ul li {
+  list-style: none;
+  margin: 30px;
+}
+nav ul li a {
+  border: 5px double #38A3A5;
+  border-radius: 30px;
 }
 
-nav ul{
-    margin: 20px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+.select {
+  color: #22577A;
+  background-color: #57CC99;
 }
 
-nav ul li{
-    list-style: none;
-    margin: 30px;
+h1 {
+  grid-area: titulo;
+  color: #22577A;
+  background-color: #57CC99;
+  padding: 3px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0;
 }
 
-nav ul li a{
-    border: 5px double #38A3A5;
-    border-radius: 30px;
-}
-.select{
-    color: #22577A;
-    background-color: #57CC99;
-}
-
-h1{
-    grid-area: titulo;
-    color: #22577A;
-    background-color: #57CC99;
-    padding: 3px;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 0;
+main {
+  grid-area: main;
+  background-color: #C7F9CC;
+  border: 5px solid #22577A;
+  border-bottom: none;
+  display: flex;
+  flex-direction: column;
 }
 
-main{
-    grid-area: main;
-    background-color: #C7F9CC;
-    border: 5px solid #22577A;
-    border-bottom: none;
-    display: flex;
-    flex-direction: column;
+footer {
+  grid-area: footer;
+  font-size: 11px;
+  background: linear-gradient(to top, #22577A 50%, #C7F9CC);
+  padding-top: 10px;
+  border: 5px solid #22577A;
+  border-top: none;
+  color: #57CC99;
+  display: flex;
+  justify-content: center;
 }
-
-footer{
-    grid-area: footer;
-    font-size: 11px;
-    background: linear-gradient(to top, #22577A 50%, #C7F9CC);
-    padding-top: 10px;
-    border: 5px solid #22577A;
-    border-top: none;
-    color: #57CC99;
-    display: flex;
-    justify-content: center;
-}
-
-footer p{
-    margin-bottom: 0;
+footer p {
+  margin-bottom: 0;
 }
 
 /* CSS HOME */
-main .info{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+main .info {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+main .info p {
+  text-align: center;
 }
 
-main .info p{
-    text-align: center;
+main .productoDes {
+  border: 5px solid #22577A;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-
-main .productoDes{
-    border: 5px solid #22577A;
-    margin: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+main .productoDes p {
+  text-align: center;
 }
-main .productoDes p{
-    text-align: center;
-}
-
-main .productoDes img{
-    border: 5px solid #22577A;
-    border-radius: 30px;
-    margin: 10px;
-    width: 40%;
-    height: auto;
+main .productoDes img {
+  border: 5px solid #22577A;
+  border-radius: 30px;
+  margin: 10px;
+  width: 40%;
+  height: auto;
 }
 
 /* CSS EMPRESA */
-main .nosotros{
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
+main .nosotros {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
 }
-
-main .nosotros img{
-    width: 100%;
-    border: 5px solid black;
-    height: auto;
+main .nosotros img {
+  width: 100%;
+  border: 5px solid black;
+  height: auto;
 }
-
-main .nosotros p{
-    text-align: center;
-    margin: 5px;
+main .nosotros p {
+  text-align: center;
+  margin: 5px;
 }
 
 /* CSS CLIENTES */
-
-main .imagenes{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    margin: 10px;
+main .imagenes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin: 10px;
 }
-
-.imagenes img{
-    width: 80%;
-    border: 5px solid #22577A;
-    border-radius: 50px;
+main .imagenes img {
+  width: 80%;
+  border: 5px solid #22577A;
+  border-radius: 50px;
 }
 
 /* CSS CONTACTO */
-
-form{
-    font-size: 20px;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 9px;
+form {
+  font-size: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 9px;
 }
-
 form input {
-    border: 3px solid #22577A;
-    border-radius: 20px;
-    background-color: #57CC99;
-    text-align: center;
+  border: 3px solid #22577A;
+  border-radius: 20px;
+  background-color: #57CC99;
+  text-align: center;
+}
+form textarea {
+  background-color: #57CC99;
+  border: 3px solid #22577A;
+  border-radius: 20px;
+  text-align: center;
 }
 
-form textarea{
-    background-color: #57CC99;
-    border: 3px solid #22577A;
-    border-radius: 20px;
-    text-align: center;
+.enviar {
+  padding: 5px;
 }
 
-.enviar{
-    padding: 5px;
+.ubicacion {
+  text-align: center;
 }
 
-.ubicacion{
-    text-align: center;
-}
-
-.data{
-    text-align: center;
-    margin: 5px;
+.data {
+  text-align: center;
+  margin: 5px;
 }
 
 /* CSS PRODUCTOS */
-.productos{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    padding: 10px;
+.productos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
 }
 
-.producto{
-    background: radial-gradient(#38A3A5, #22577A);
-    border-radius: 50px;
-    width: 80%;
-    display: flex;
-    gap: 5px;
-    padding-bottom: 5px;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
+.producto {
+  background: radial-gradient(#38A3A5, #22577A);
+  border-radius: 50px;
+  width: 80%;
+  display: flex;
+  gap: 5px;
+  padding-bottom: 5px;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
 }
-.producto img{
-    width: 100%;
-    border-radius: 50px 50px 0 0;
+.producto img {
+  width: 100%;
+  border-radius: 50px 50px 0 0;
 }
-
-.producto button{
-    border: none;
-    width: 50%;
-    border-radius: 30px;
-    background-color: #38A3A5;
+.producto button {
+  border: none;
+  width: 50%;
+  border-radius: 30px;
+  background-color: #38A3A5;
 }
 
 /* MEDIA QUERYS */
 /* TABLET */
-@media screen and (min-width: 600px){
-    nav{
-        background: linear-gradient(to bottom, #22577A 60%, #57CC99);
-    }
+@media screen and (min-width: 600px) {
+  nav {
+    background: linear-gradient(to bottom, #22577A 60%, #57CC99);
+  }
+  nav ul {
+    flex-direction: row;
+  }
 
-    nav ul{
-        flex-direction: row;
-    }
-    
-    /* QUERY HOME */
-    main .productoDes{
-        flex-direction: row;
-        justify-content: space-around;
-    }
+  /* QUERY HOME */
+  main .productoDes {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  main .productoDes p {
+    width: 40%;
+    font-size: 20px;
+  }
 
-    main .productoDes p{
-        width: 40%;
-        font-size: 20px;
-    }
+  /* QUERY CLIENTES */
+  main .imagenes {
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px;
+  }
+  main .imagenes img {
+    width: 30%;
+    margin: 15px;
+  }
 
-    /* QUERY CLIENTES */
+  /* QUERY CONTACTO */
+  .ubicacion {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 10px;
+  }
 
-    main .imagenes{
-        flex-direction: row;
-        justify-content: space-around;
-        padding: 10px;
-    }
+  /* QUERY PRODUCTOS */
+  .productos {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
 
-    main .imagenes img{
-        width: 30%;
-        margin: 15px;
-    }
-
-    /* QUERY CONTACTO */
-    .ubicacion{
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        margin: 10px;
-    }
-
-    /* QUERY PRODUCTOS */
-    .productos{
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
-    }
-    .producto{
-        width: 40%;
-        margin-bottom: 30px;
-    }
-
+  .producto {
+    width: 40%;
+    margin-bottom: 30px;
+  }
 }
-
 /* DESKTOP */
 @media screen and (min-width: 1024px) {
+  nav ul li:hover {
+    transform: scale(1.5, 1.5);
+    transition: all 0.6s;
+  }
 
+  /* QUERY HOME */
+  main .info-contenido {
+    display: flex;
+  }
 
-    /* QUERY HOME */
-    main .info-contenido{
-        display: flex;
-    }
+  /* QUERY EMPRESA */
+  main .nosotros {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  main .nosotros img {
+    width: 50%;
+  }
+  main .nosotros p {
+    width: 40%;
+    font-size: 29px;
+  }
 
-    /* QUERY EMPRESA */
-    main .nosotros{
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-    }
-    main .nosotros img{
-        width: 50%;
-    }
-    main .nosotros p{
-        width: 40%;
-        font-size: 29px;
-    }
+  /* QUERY CLIENTES */
+  main .imagenes img {
+    width: 20%;
+  }
 
-    /* QUERY CLIENTES */
-    main .imagenes img{
-        width: 20%;
-    }
+  /* QUERY CONTACTO */
+  .enviar:hover {
+    border: 3px solid #57CC99;
+    background-color: #22577A;
+  }
 
-    /* QUERY CONTACTO */
-    .enviar:hover{
-        border: 3px solid #57CC99;
-        background-color: #22577A;
-    }
-    .contacto{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-    }
+  .contacto {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
 
-    /* QUERY PRODUCTOS */
-    .producto{
-        width: 20%;
-    }
-
-    .producto button:hover{
-        background-color: #57CC99;
-    }
-}
+  /* QUERY PRODUCTOS */
+  .producto {
+    width: 20%;
+  }
+  .producto button:hover {
+    background-color: #57CC99;
+  }
+}/*# sourceMappingURL=index.css.map */
