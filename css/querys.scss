@@ -1,36 +1,39 @@
 /* TABLET */
-@media screen and (min-width: 600px){
-    nav{
+@media screen and (min-width: 600px) {
+    nav {
         background: linear-gradient(to bottom, #22577A 60%, #57CC99);
-        ul{
-        flex-direction: row;
+
+        ul {
+            flex-direction: row;
+        }
     }
-    }
-    
+
     /* QUERY HOME */
-    main .productoDes{
+    main .productoDes {
         flex-direction: row;
         justify-content: space-around;
-        p{
-        width: 40%;
-        font-size: 20px;
-    }
+
+        p {
+            width: 40%;
+            font-size: 20px;
+        }
     }
 
     /* QUERY CLIENTES */
 
-    main .imagenes{
+    main .imagenes {
         flex-direction: row;
         justify-content: space-around;
         padding: 10px;
-        img{
-        width: 30%;
-        margin: 15px;
-    }
+
+        img {
+            width: 30%;
+            margin: 15px;
+        }
     }
 
     /* QUERY CONTACTO */
-    .ubicacion{
+    .ubicacion {
         display: flex;
         align-items: center;
         justify-content: space-around;
@@ -38,12 +41,13 @@
     }
 
     /* QUERY PRODUCTOS */
-    .productos{
+    .productos {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-around;
     }
-    .producto{
+
+    .producto {
         width: 40%;
         margin-bottom: 30px;
     }
@@ -53,9 +57,9 @@
 /* DESKTOP */
 @media screen and (min-width: 1024px) {
 
-    nav{
-        ul{
-            li:hover{
+    nav {
+        ul {
+            li:hover {
                 transform: scale(1.5, 1.5);
                 transition: all 0.6s;
             }
@@ -64,36 +68,39 @@
 
 
     /* QUERY HOME */
-    main .info-contenido{
+    main .info-contenido {
         display: flex;
     }
 
     /* QUERY EMPRESA */
-    main .nosotros{
+    main .nosotros {
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
-        img{
-        width: 50%;
-    }
-        p{
-        width: 40%;
-        font-size: 29px;
-    }
+
+        img {
+            width: 50%;
+        }
+
+        p {
+            width: 40%;
+            font-size: 29px;
+        }
     }
 
 
     /* QUERY CLIENTES */
-    main .imagenes img{
+    main .imagenes img {
         width: 20%;
     }
 
     /* QUERY CONTACTO */
-    .enviar:hover{
+    .enviar:hover {
         border: 3px solid #57CC99;
         background-color: #22577A;
     }
-    .contacto{
+
+    .contacto {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
@@ -101,10 +108,11 @@
     }
 
     /* QUERY PRODUCTOS */
-    .producto{
+    .producto {
         width: 20%;
-        button:hover{
-        background-color: #57CC99;
-    }
+
+        button:hover {
+            background-color: #57CC99;
+        }
     }
 }
