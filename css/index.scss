@@ -38,6 +38,15 @@ h1 {
     margin-bottom: 0;
 }
 
+.cont {
+        /* margin: auto; */
+        width: auto;
+        height: 50%;
+        border: 5px solid $azul;
+        border-bottom: none;
+        /* padding: 40px; */
+}
+
 main {
     grid-area: main;
     background-color: #C7F9CC;
