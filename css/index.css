@@ -77,17 +77,17 @@ main .info p {
 }
 
 main .productoDes {
-  border: 5px solid #22577A;
   margin: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  border-radius: 30px;
+  background: radial-gradient(#38A3A5, #22577A);
 }
 main .productoDes p {
   text-align: center;
 }
 main .productoDes img {
-  border: 5px solid #22577A;
   border-radius: 30px;
   margin: 10px;
   width: 40%;
