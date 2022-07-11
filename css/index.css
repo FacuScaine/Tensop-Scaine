@@ -200,7 +200,6 @@ form textarea {
   nav ul {
     flex-direction: row;
   }
-
   /* QUERY HOME */
   main .productoDes {
     flex-direction: row;
@@ -210,7 +209,6 @@ form textarea {
     width: 40%;
     font-size: 20px;
   }
-
   /* QUERY CLIENTES */
   main .imagenes {
     flex-direction: row;
@@ -221,7 +219,6 @@ form textarea {
     width: 30%;
     margin: 15px;
   }
-
   /* QUERY CONTACTO */
   .ubicacion {
     display: flex;
@@ -229,14 +226,12 @@ form textarea {
     justify-content: space-around;
     margin: 10px;
   }
-
   /* QUERY PRODUCTOS */
   .productos {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
   }
-
   .producto {
     width: 40%;
     margin-bottom: 30px;
@@ -248,12 +243,10 @@ form textarea {
     transform: scale(1.5, 1.5);
     transition: all 0.6s;
   }
-
   /* QUERY HOME */
   main .info-contenido {
     display: flex;
   }
-
   /* QUERY EMPRESA */
   main .nosotros {
     flex-direction: row;
@@ -267,21 +260,18 @@ form textarea {
     width: 40%;
     font-size: 29px;
   }
-
   /* QUERY CLIENTES */
   /* QUERY CONTACTO */
   .enviar:hover {
     border: 3px solid #57CC99;
     background-color: #22577A;
   }
-
   .contacto {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
   }
-
   /* QUERY PRODUCTOS */
   .producto {
     width: 30%;
